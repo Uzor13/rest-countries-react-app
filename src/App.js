@@ -1,4 +1,3 @@
-import './App.css';
 import React, {useEffect, useState} from "react";
 import CountriesList from "./components/Countries/CountriesList";
 import GridContainer from "./components/Layout/GridContainer";
