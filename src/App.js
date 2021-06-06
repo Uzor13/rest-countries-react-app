@@ -9,6 +9,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Country from "./components/Countries/Country";
 import { ThemeScriptTag } from 'tailwind-darkmode-toggle';
 import { ThemeProvider } from 'tailwind-darkmode-toggle';
+import './styles/tailwind.css';
 
 function App() {
 
