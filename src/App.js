@@ -23,21 +23,21 @@ function App() {
 
     const fetchCountries = async () => {
         setLoading(true)
-        const response = await fetch(`${process.env.REACT_APP_URL}all`)
+        const response = await fetch(`https://restcountries.eu/rest/v2/all`)
         const countries = await response.json()
         setCountries(countries)
         setLoading(false)
     }
 
     const getCountryData = async () => {
-        const response = await fetch(`${process.env.REACT_APP_URL}name/${searchValue}`)
+        const response = await fetch(`https://restcountries.eu/rest/v2/name/${searchValue}`)
         const countries = await response.json()
         setCountries(countries)
         console.log(countries)
     }
 
     const getCountryByRegion = async () => {
-        const response = await fetch(`${process.env.REACT_APP_URL}region/${region}`)
+        const response = await fetch(`https://restcountries.eu/rest/v2/region/${region}`)
         const countries = await response.json()
         setCountries(countries)
         console.log(countries)
